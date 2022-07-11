@@ -1,0 +1,5 @@
+com\example\service\AddressServiceTests.class
+com\example\mapper\UserMapperTests.class
+com\example\mapper\AddressMapperTests.class
+com\example\service\UserServiceTests.class
+com\example\StoreApplicationTests.class

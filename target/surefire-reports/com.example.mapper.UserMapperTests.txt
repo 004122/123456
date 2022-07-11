@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.example.mapper.UserMapperTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.26 s <<< FAILURE! - in com.example.mapper.UserMapperTests
+insert  Time elapsed: 0.19 s  <<< ERROR!
+org.springframework.dao.DuplicateKeyException: 
+
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'user05' for key 'username'
+### The error may exist in com/example/mapper/UserMapper.java (best guess)
+### The error may involve com.example.mapper.UserMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_user(username,password,salt,phone,email,gender,avatar,is_delete,created_user,created_time,modified_user,modified_time) values(?,?,?,?,?,?,?,?,?,?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'user05' for key 'username'
+; Duplicate entry 'user05' for key 'username'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'user05' for key 'username'
+	at com.example.mapper.UserMapperTests.insert(UserMapperTests.java:24)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'user05' for key 'username'
+	at com.example.mapper.UserMapperTests.insert(UserMapperTests.java:24)
+

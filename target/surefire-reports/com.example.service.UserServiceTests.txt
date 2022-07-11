@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.example.service.UserServiceTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.06 s <<< FAILURE! - in com.example.service.UserServiceTests
+changeInfo  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.service.UserServiceTests.changeInfo(UserServiceTests.java:52)
+
+changeAvatar  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.service.UserServiceTests.changeAvatar(UserServiceTests.java:57)
+
+login  Time elapsed: 0.01 s  <<< ERROR!
+com.example.service.ex.PasswordNotMatchException: 用户密码错误！
+	at com.example.service.UserServiceTests.login(UserServiceTests.java:34)
+
+changePassword  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.service.UserServiceTests.changePassword(UserServiceTests.java:40)
+
+getByUid  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.service.UserServiceTests.getByUid(UserServiceTests.java:45)
+
